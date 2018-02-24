@@ -20,7 +20,8 @@ npm run patronus
 ```
 
 **Levantar api**
-```npm run pokemon
+```
+npm run pokemon
 ```
 
 [localhost:3000/explorer](http://localhost:3000/explorer)
