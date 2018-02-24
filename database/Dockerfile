@@ -1,0 +1,12 @@
+FROM mysql:5.7
+RUN chown -R mysql:root /var/lib/mysql
+ARG MYSQL_ROOT_PASSWORD
+
+ENV MYSQL_USER=root
+ENV MYSQL_PASSWORD=$MYSQL_PASSWORD
+ENV MYSQL_ROOT_PASSWORD=$MYSQL_ROOT_PASSWORD
+
+ADD *.sql /docker-entrypoint-initdb.d/
+
+
+EXPOSE 3304

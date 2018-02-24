@@ -1,0 +1,25 @@
+product: '1.0.0'
+
+info:
+  name: api-solynieve
+  title: api-solynieve
+  version: "1.0.0"
+
+apis:
+  'api-solynieve':
+    $ref: api-solynieve.yaml
+
+visibility:
+  view:
+    type: public
+  subscribe:
+    type: authenticated
+
+plans:
+  default:
+    title: Default Plan
+    description: Default Plan
+    approval: false
+    rate-limit:
+      value: 100/hour
+      hard-limit: false

@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "AccessToken": {
+    "dataSource": "db",
+    "public": false
+  },
+  "ACL": {
+    "dataSource": "db",
+    "public": false
+  },
+  "RoleMapping": {
+    "dataSource": "db",
+    "public": false,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "db",
+    "public": false
+  },
+  "Socio": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Pago": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Importe": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Detallefactura": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Usuario": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Factura": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Domicilio": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Lote": {
+    "dataSource": "solynieve",
+    "public": true
+  }
+}
