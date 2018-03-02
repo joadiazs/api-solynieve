@@ -7,13 +7,14 @@
   },
   "mysql": {
     "schema": "solynieve",
-    "table": "Factura"
+    "table": "factura"
   },
   "properties": {
     "idfactura": {
       "type": "Number",
       "id": true,
-      "required": true,
+      "generated": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -24,6 +25,21 @@
         "dataPrecision": 10,
         "dataScale": 0,
         "nullable": "N"
+      }
+    },
+    "iddomicilio": {
+      "type": "Number",
+      "required": false,
+      "length": null,
+      "precision": 10,
+      "scale": 0,
+      "mysql": {
+        "columnName": "idDomicilio",
+        "dataType": "int",
+        "dataLength": null,
+        "dataPrecision": 10,
+        "dataScale": 0,
+        "nullable": "Y"
       }
     },
     "nrofactura": {
@@ -88,23 +104,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "domicilio": {
-      "type": "belongsTo",
-      "model": "Domicilio",
-      "foreignKey": "iddomicilio"
-    },
-    "socio": {
-      "type": "belongsTo",
-      "model": "Socio",
-      "foreignKey": "idsocio"
-    },
-    "importes": {
-      "type": "hasMany",
-      "model": "Importe",
-      "foreignKey": "idfactura"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

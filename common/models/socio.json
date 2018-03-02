@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "solynieve",
-    "table": "Socio"
+    "table": "socio"
   },
   "properties": {
     "idsocio": {
@@ -73,15 +73,15 @@
       }
     },
     "dni": {
-      "type": "String",
+      "type": "Number",
       "required": false,
-      "length": 45,
+      "length": null,
       "precision": 10,
       "scale": 0,
       "mysql": {
         "columnName": "dni",
-        "dataType": "varchar",
-        "dataLength": 45,
+        "dataType": "int",
+        "dataLength": null,
         "dataPrecision": 10,
         "dataScale": 0,
         "nullable": "Y"
@@ -105,13 +105,13 @@
     "cuitcuil": {
       "type": "String",
       "required": false,
-      "length": 14,
+      "length": 11,
       "precision": null,
       "scale": null,
       "mysql": {
         "columnName": "cuitCuil",
         "dataType": "varchar",
-        "dataLength": 14,
+        "dataLength": 11,
         "dataPrecision": null,
         "dataScale": null,
         "nullable": "Y"
@@ -165,25 +165,15 @@
   },
   "validations": [],
   "relations": {
-    "usuarios": {
-      "type": "hasOne",
-      "model": "Usuario",
-      "foreignKey": "idsocio"
-    },
-    "lotes": {
-      "type": "hasMany",
-      "model": "Lote",
-      "foreignKey": "idsocio"
+    "domicilio": {
+      "type": "belongsTo",
+      "model": "Domicilio",
+      "foreignKey": "iddomicilio"
     },
     "facturas": {
       "type": "hasMany",
       "model": "Factura",
       "foreignKey": "idsocio"
-    },
-    "domicilio": {
-      "type": "belongsTo",
-      "model": "Domicilio",
-      "foreignKey": "iddomicilio"
     }
   },
   "acls": [],

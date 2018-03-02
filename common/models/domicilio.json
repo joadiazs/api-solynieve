@@ -7,13 +7,14 @@
   },
   "mysql": {
     "schema": "solynieve",
-    "table": "Domicilio"
+    "table": "domicilio"
   },
   "properties": {
     "iddomicilio": {
       "type": "Number",
       "id": true,
-      "required": true,
+      "generated": true,
+      "required": false,
       "length": null,
       "precision": 10,
       "scale": 0,
@@ -73,13 +74,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "factura": {
-      "type": "hasOne",
-      "model": "Factura",
-      "foreignKey": "iddomicilio"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

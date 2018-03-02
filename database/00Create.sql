@@ -15,6 +15,9 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
+CREATE DATABASE  IF NOT EXISTS `solynieve` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `solynieve`;
+
 --
 -- Table structure for table `DetalleFactura`
 --
@@ -126,6 +129,7 @@ DROP TABLE IF EXISTS `Socio`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `Socio` (
   `idSocio` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `idDomicilio` int(11) DEFAULT NULL,
   `nombre` varchar(45) DEFAULT NULL,
   `apellido` varchar(45) DEFAULT NULL,
   `dni` int(11) DEFAULT NULL,

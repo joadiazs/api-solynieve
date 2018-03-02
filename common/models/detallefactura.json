@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "solynieve",
-    "table": "DetalleFactura"
+    "table": "detallefactura"
   },
   "properties": {
     "iddetallefactura": {
@@ -44,13 +44,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "importes": {
-      "type": "hasMany",
-      "model": "Importe",
-      "foreignKey": "iddetalle"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "solynieve",
-    "table": "Pago"
+    "table": "pago"
   },
   "properties": {
     "idpago": {

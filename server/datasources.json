@@ -4,11 +4,11 @@
     "connector": "memory"
   },
   "solynieve": {
-    "host": "192.168.99.100",
-    "port": 3304,
+    "host": "localhost",
+    "port": 3306,
     "url": "",
     "database": "solynieve",
-    "password": "root",
+    "password": "",
     "name": "solynieve",
     "connector": "mysql",
     "user": "root"

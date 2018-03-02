@@ -7,7 +7,7 @@
   },
   "mysql": {
     "schema": "solynieve",
-    "table": "Usuario"
+    "table": "usuario"
   },
   "properties": {
     "idusuario": {
@@ -89,13 +89,7 @@
     }
   },
   "validations": [],
-  "relations": {
-    "socio": {
-      "type": "belongsTo",
-      "model": "Socio",
-      "foreignKey": "idsocio"
-    }
-  },
+  "relations": {},
   "acls": [],
   "methods": {}
 }

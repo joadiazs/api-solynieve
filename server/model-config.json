@@ -32,27 +32,7 @@
     "dataSource": "db",
     "public": false
   },
-  "Socio": {
-    "dataSource": "solynieve",
-    "public": true
-  },
-  "Pago": {
-    "dataSource": "solynieve",
-    "public": true
-  },
-  "Importe": {
-    "dataSource": "solynieve",
-    "public": true
-  },
-  "Detallefactura": {
-    "dataSource": "solynieve",
-    "public": true
-  },
   "Usuario": {
-    "dataSource": "solynieve",
-    "public": true
-  },
-  "Factura": {
     "dataSource": "solynieve",
     "public": true
   },
@@ -60,7 +40,27 @@
     "dataSource": "solynieve",
     "public": true
   },
+  "Detallefactura": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Factura": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Importe": {
+    "dataSource": "solynieve",
+    "public": true
+  },
   "Lote": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Pago": {
+    "dataSource": "solynieve",
+    "public": true
+  },
+  "Socio": {
     "dataSource": "solynieve",
     "public": true
   }
