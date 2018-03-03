@@ -93,7 +93,7 @@ CREATE TABLE `Lote` (
   `idLote` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `idSocio` int(11) DEFAULT NULL,
   `numero` int(11) DEFAULT NULL,
-  `manzana` int(11) DEFAULT NULL,
+  `manzana` varchar(2) DEFAULT NULL,
   `frente` float DEFAULT NULL,
   `edificado` tinyint(1) DEFAULT NULL,
   `nroValvulas` int(11) DEFAULT NULL,
