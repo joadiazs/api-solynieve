@@ -8,7 +8,7 @@
     "port": 3306,
     "url": "",
     "database": "solynieve",
-    "password": "root",
+    "password": "root123",
     "name": "solynieve",
     "connector": "mysql",
     "user": "root"
